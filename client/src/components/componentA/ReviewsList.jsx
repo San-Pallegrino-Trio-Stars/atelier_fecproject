@@ -33,12 +33,13 @@ const ReviewsList = () => {
 
   return (
     <div className="relative overflow-y-auto h-64 reviews-list ">
-      <h2>Reviews List</h2>
+      <h2>248 reviews, sorted by relevance</h2>
       {reviews.slice(0, visible).map(review => (
         <ReviewEntry review={review} key={review.review_id} />
       ))}
 
-      <button onClick={showMoreReviews}> More Reviews</button>
+      {visible < reviews.length ? <button class="border-solid border-2 border-black px-8" onClick={showMoreReviews}> MORE REVIEWS</button> : null}
+
     </div>
   );
 };
