@@ -27,7 +27,6 @@ const ReviewsList = () => {
   }
 
 
-
   useEffect(() => {
     fetchReviews();
   }, []);
