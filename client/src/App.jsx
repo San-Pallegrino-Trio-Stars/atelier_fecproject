@@ -13,7 +13,7 @@ const App = () => {
       <Header />
       <div className="h-max">
       <ReviewsList />
-      <QuestionsAndAnswers />
+      {/* <QuestionsAndAnswers /> */}
     </div>
       </div>
 
